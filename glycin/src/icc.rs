@@ -92,10 +92,8 @@ const fn lcms_pixel_format(format: MemoryFormat) -> lcms2::PixelFormat {
         MemoryFormat::R32g32b32Float => lcms2::PixelFormat::RGB_FLT,
         MemoryFormat::R32g32b32a32FloatPremultiplied => premul(lcms2::PixelFormat::RGBA_FLT),
         MemoryFormat::R32g32b32a32Float => lcms2::PixelFormat::RGBA_FLT,
-        MemoryFormat::G8a8Premultiplied => premul(lcms2::PixelFormat::GRAYA_8),
         MemoryFormat::G8a8 => lcms2::PixelFormat::GRAYA_8,
         MemoryFormat::G8 => lcms2::PixelFormat::GRAY_8,
-        MemoryFormat::G16a16Premultiplied => premul(lcms2::PixelFormat::GRAYA_16),
         MemoryFormat::G16a16 => lcms2::PixelFormat::GRAYA_16,
         MemoryFormat::G16 => lcms2::PixelFormat::GRAY_16,
     }

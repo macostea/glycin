@@ -15,7 +15,7 @@ rust-version.workspace = true
 anyhow = { version = "1.0.71", features = ["backtrace"] }
 async-std = { version = "1.12.0", features = ["unstable"] }
 futures = "0.3.28"
-gdk = { package = "gdk4", version = "0.7.1", features = ["v4_12"] }
+gdk = { package = "gdk4", version = "0.7.1", features = ["v4_6"] }
 gio = "0.18.1"
 glycin-utils = { version = "0.1.0-beta.2", path = "../glycin-utils/" }
 lcms2 = "5.6.0"
